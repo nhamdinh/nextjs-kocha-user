@@ -1,3 +1,4 @@
+"use client";
 import "./style.scss";
 import { useEffect, useState } from "react";
 import DoubleRightOutlined from "@ant-design/icons/lib/icons/DoubleRightOutlined";

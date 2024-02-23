@@ -9,6 +9,7 @@ import CreateUser from "@/app/componentsUtil/modalCustomize/CreateUser";
 import { DeleteTwoTone, FireTwoTone } from "@ant-design/icons";
 import { deleteUser, getUserById } from "@/apis/apisUser";
 import UpdateUser from "@/app/componentsUtil/modalCustomize/UpdateUser";
+import { API_LINK } from "@/utils/constants";
 interface DataType {
   id: string;
   // name: string;

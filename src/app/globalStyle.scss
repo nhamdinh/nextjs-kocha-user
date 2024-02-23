@@ -1,0 +1,774 @@
+html {
+    font-family: Pretendard !important;
+  }
+  
+  body {
+    margin: 0;
+  
+    #__next {
+      min-width: 1440px;
+    }
+  }
+  
+  .ant-btn-default:not(:disabled):hover {
+    border-color: transparent;
+  }
+  
+  .korcha-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ant-pagination-options {
+    display: none !important;
+  }
+  
+  .layout.no-padding {
+    padding-top: 0 !important;
+  }
+  
+  .layout {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+    padding-top: 180px;
+  
+    font-family: Pretendard;
+    min-height: calc(100vh - 352px);
+    white-space: pre-line;
+  
+    .ant-input:hover,
+    .ant-input-affix-wrapper:hover {
+      border-color: #ff4545;
+    }
+  
+    .ant-select-selector {
+      // height: 36px !important;
+  
+      outline: none !important;
+      box-shadow: none !important;
+      border-color: #eeeeee !important;
+  
+      &:focus-within {
+        border-color: #ff4545 !important;
+      }
+    }
+  
+    .ant-radio-input:focus-visible {
+      // border: none !important;
+      // box-shadow: none !important;
+      // background-color: none !important;
+      // color: none !important;
+    }
+  
+    .ant-radio,
+    .ant-radio-inner,
+    .ant-radio-checked {
+      width: 24px;
+      height: 24px;
+    }
+  
+    .ant-radio-checked {
+      .ant-radio-inner {
+        background-color: #fff;
+        border-color: #ff4545;
+      }
+    }
+  
+    .ant-radio-inner:after {
+      width: 32px;
+      height: 32px;
+      background-color: #ff4545;
+      margin-block-start: -16px;
+      margin-inline-start: -16px;
+      border-radius: 16px;
+    }
+  
+    .ant-checkbox {
+      margin-right: 4px;
+      border-color: #bdbdbd !important;
+  
+      .ant-checkbox-inner {
+        border-radius: 0px;
+        border-color: #bdbdbd !important;
+      }
+    }
+  
+    .ant-checkbox-wrapper:hover .ant-checkbox-inner,
+    .ant-checkbox:hover .ant-checkbox-inner,
+    .ant-checkbox-input:focus+.ant-checkbox-inner {
+      border-color: #ff4545 !important;
+    }
+  
+    .ant-checkbox-checked .ant-checkbox-inner {
+      background-color: #fff; // selected color
+      border-color: #ff4545;
+    }
+  
+    .ant-checkbox-checked .ant-checkbox-inner::after {
+      background-color: transparent;
+      position: absolute;
+      display: table;
+      border: 2px solid #ff4545;
+      border-top: 0;
+      border-left: 0;
+      transform: rotate(45deg) scale(1) translate(-50%, -50%);
+      opacity: 1;
+      transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+      content: " ";
+    }
+  
+    .ant-checkbox-inner::after:hover {
+      border-color: #ff4545 !important;
+    }
+  
+    .ant-checkbox-wrapper:not(.ant-checkbox-wrapper-disabled):hover .ant-checkbox-checked:not(.ant-checkbox-disabled) .ant-checkbox-inner {
+      background-color: #fff !important;
+      border-color: #ff4545 !important;
+    }
+  
+    .ant-checkbox-checked:after {
+      border: 1px solid #ff4545 !important;
+    }
+  
+    .wrapper {
+      width: 1440px;
+      max-width: 1440px;
+      margin: 0 auto;
+      overflow: hidden;
+      padding: 0 120px;
+    }
+  
+    textarea {
+      resize: none;
+    }
+  
+    .pagination-reviews {
+      // margin-left: 40%;
+      margin-top: 44px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      .pagination-icon {
+        cursor: pointer;
+      }
+  
+      .pagination-passive {
+        color: #9e9e9e;
+        cursor: not-allowed;
+      }
+  
+      .ant-pagination-item-active {
+        border-color: transparent;
+  
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+  
+        &:hover {
+          border-color: transparent;
+          color: #ff4545;
+          font-size: 20px;
+          font-weight: 600;
+        }
+      }
+  
+      .ant-pagination-item-active a {
+        border-color: transparent;
+        color: black;
+  
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+  
+        &:hover {
+          border-color: transparent;
+          color: black;
+          font-size: 20px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  .layout.fchina {
+    * {
+      font-family: Hiragino !important;
+    }
+  }
+  .layout.fkorean {
+    * {
+      font-family: Pretendard !important;
+    }
+  }
+  .full-width {
+    background: #131313;
+    width: 100%;
+  }
+  .full-width.fchina {
+    * {
+      font-family: Hiragino !important;
+    }
+  }
+  .full-width.fkorean {
+    * {
+      font-family: Pretendard !important;
+    }
+  }
+  
+  .footer {
+    height: 352px;
+    width: 1440px;
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+  
+    padding: 0 120px;
+    background: #131313;
+    font-family: Pretendard;
+    padding-top: 20px;
+    // padding-bottom: 55px;
+    display: flex;
+    justify-content: center;
+  
+    .content {
+      width: 100%;
+      display: flex;
+      // justify-content: space-between;
+      gap: 120px;
+  
+      .left-group {
+        color: #fff;
+        width: 50%;
+      }
+  
+      .right-group {
+        color: #fff;
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+  
+        .policy {
+          cursor: pointer;
+          padding-bottom: 12px;
+          font-family: "Pretendard";
+          line-height: 22px;
+        }
+      }
+    }
+  }
+  
+  .decoration-none {
+    text-decoration: none;
+  }
+  
+  @font-face {
+    font-family: "Hiragino";
+    font-style: normal;
+    // font-weight: 100;
+    src: local("Hiragino-Sans"),
+      url(../public/css/Fonts/Hiragino-Sans.otf) format("opentype");
+  }
+  
+  @font-face {
+    font-family: "Hiragino";
+    // font-style: normal;
+    font-weight: 600;
+    src: local("Hiragino-Sans-GB-W6"),
+      url(../public/css/Fonts/Hiragino-Sans-GB-W6.otf) format("opentype");
+  }
+  
+  @font-face {
+    font-family: "Pretendard-Bold";
+    font-weight: 700;
+    src: local("Pretendard-Bold"), url(../public/css/Fonts/Pretendard-Bold.otf) format("opentype");
+  }
+  
+  @font-face {
+    font-family: Pretendard;
+    font-weight: 600;
+    font-weight: 600;
+    src: local("Pretendard-SemiBold"), url(../public/css/Fonts/Pretendard-SemiBold.otf) format("opentype");
+  }
+  
+  @font-face {
+    font-family: "Pretendard";
+    font-style: normal;
+    font-weight: 100;
+    src: local("Pretendard-Thin"),
+      url(../public/css/Fonts/Pretendard-Thin.otf) format("opentype");
+  }
+  
+  @font-face {
+    font-family: "Pretendard";
+    font-style: normal;
+    font-weight: 200;
+    src: local("Pretendard-ExtraLight"),
+      url(../public/css/Fonts/Pretendard-ExtraLight.otf) format("opentype");
+  }
+  
+  @font-face {
+    font-family: "Pretendard";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Pretendard-Black"),
+      url(../public/css/Fonts/Pretendard-Light.otf) format("opentype");
+  }
+  
+  @font-face {
+    font-family: "Pretendard";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Pretendard-Regular"),
+      url(../public/css/Fonts/Pretendard-Regular.otf) format("opentype");
+  }
+  
+  @font-face {
+    font-family: "Pretendard";
+    font-style: normal;
+    font-weight: 500;
+    src: local("Pretendard-Medium"),
+      url(../public/css/Fonts/Pretendard-Medium.otf) format("opentype");
+  }
+  
+  @font-face {
+    font-family: "Pretendard";
+    font-style: normal;
+    font-weight: 600;
+    src: local("Pretendard-SemiBold"),
+      url(../public/css/Fonts/Pretendard-SemiBold.otf) format("opentype");
+  }
+  
+  @font-face {
+    font-family: "Pretendard";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Pretendard-Bold"),
+      url(../public/css/Fonts/Pretendard-Bold.otf) format("opentype");
+  }
+  
+  @font-face {
+    font-family: "Pretendard";
+    font-style: normal;
+    font-weight: 800;
+    src: local("Pretendard-ExtraBold"),
+      url(../public/css/Fonts/Pretendard-ExtraBold.otf) format("opentype");
+  }
+  
+  @font-face {
+    font-family: "Pretendard";
+    font-style: normal;
+    font-weight: 900;
+    src: local("Pretendard-Black"),
+      url(../public/css/Fonts/Pretendard-Black.otf) format("opentype");
+  }
+  
+  @media screen and (max-width: 768px) {
+    body {
+      #__next {
+        min-width: 360px;
+      }
+    }
+  
+    .layout {
+      min-width: 360px;
+      max-width: 768px;
+      padding-top: 68px;
+      overflow-x: auto;
+  
+      .wrapper {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+  
+    .footer {
+      height: 456px;
+      width: 100%;
+      max-width: 768px;
+      margin: 0;
+      padding: 40px 20px;
+      margin-top: 80px;
+      // background: #131313;
+      // font-family: Pretendard;
+      // padding-top: 20px;
+      // // padding-bottom: 55px;
+      // display: flex;
+      // justify-content: center;
+  
+      .content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 120px;
+  
+        .left-group {
+          color: #fff;
+          width: 100%;
+  
+          .policy-group {
+            display: flex;
+            margin-top: 24px;
+            margin-bottom: 12px;
+  
+            .terms {
+              font-family: 'Pretendard';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 20px;
+              color: #E0E0E0;
+            }
+  
+            .policy {
+              font-family: 'Pretendard';
+              font-style: normal;
+              font-weight: 600;
+              font-size: 12px;
+              line-height: 20px;
+              margin-left: 24px;
+            }
+          }
+  
+          .content-footer {
+            .df-start {
+              .ant-typography {
+                font-family: 'Pretendard';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 20px;
+                color: #E0E0E0;
+              }
+            }
+  
+            .responsibilities {
+              font-family: 'Pretendard';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 10px;
+              line-height: 18px;
+              color: #9E9E9E;
+              margin-top: 8px;
+            }
+          }
+        }
+  
+        .right-group {
+          display: flex;
+          // color: #fff;
+          // width: 50%;
+          // .policy {
+          //   cursor: pointer;
+          //   padding-bottom: 12px;
+          //   font-family: "Pretendard";
+          //   line-height: 22px;
+          // }
+        }
+      }
+    }
+  }
+  
+  .ant-select-dropdown {
+    .ant-select-item-option-content {
+      display: flex;
+      align-items: center;
+  
+      .opt-lbl {
+        display: flex;
+        gap: 12px;
+        height: 52px;
+        align-items: center;
+  
+        span {
+          color: #616161;
+          font-size: 14px;
+          font-family: Pretendard;
+          font-weight: 600;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+  
+  .row-mobile-input {
+    .ant-select-selection-item {
+      display: flex;
+      align-items: center;
+  
+      .opt-lbl {
+        display: flex;
+        gap: 12px;
+  
+        span {
+          color: #616161;
+          font-size: 14px;
+          font-family: Pretendard;
+          font-weight: 600;
+          line-height: 22px;
+        }
+      }
+  
+      .opt-lbl.lang {
+        display: flex;
+        align-items: center;
+        height: 20px;
+        width: 118px;
+  
+        span {
+          color: red;
+          font-family: Pretendard;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+  
+  .country__select {
+    .ant-select-selector {
+      background-color: transparent !important;
+      border-radius: 0;
+      border: unset;
+      border-bottom-color: #fff !important;
+      padding: 0 !important;
+  
+      .option_items span,
+      .opt-lbl span {
+        color: #fff;
+        font-family: Pretendard;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        margin-left: 8px;
+      }
+    }
+  
+    .ant-select-arrow {
+      color: #fff;
+    }
+  }
+  
+  .ant-select-dropdown.country__select_popup {
+    border-radius: unset;
+    border: 1px solid #e0e0e0;
+    width: 118px !important;
+    box-shadow: unset;
+    padding: 0;
+    background-color: #000;
+  
+    .ant-select-item-option {
+      border-radius: 0;
+      padding: 5px;
+    }
+  
+    .ant-select-item-option .ant-select-item-option-content {
+      font-family: Pretendard !important;
+      line-height: 20px;
+      font-size: 12px;
+      color: #fff;
+      background-color: #000;
+  
+      .option_items {
+        span {
+          margin-left: 8px;
+        }
+      }
+    }
+  
+    // .ant-select-item-option-selected {
+    //   background-color: red !important;
+  
+    //   .ant-select-item-option-content {
+    //     color: red;
+    //     font-family: Pretendard !important;
+    //   }
+  
+    // }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .layout {
+      .ant-checkbox {
+        margin: 4px;
+        border-color: #bdbdbd !important;
+  
+        .ant-checkbox-inner {
+          border-radius: 0px;
+          border-color: #bdbdbd !important;
+        }
+      }
+  
+      .pagination-reviews {
+        // margin-left: 40%;
+        margin-top: 44px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+        .pagination-icon {
+          cursor: pointer;
+        }
+  
+        .pagination-passive {
+          color: #9e9e9e;
+          cursor: not-allowed;
+        }
+  
+        .ant-pagination-item a {
+          border-color: transparent;
+          color: #9E9E9E;
+          font-size: 16px;
+          font-family: Pretendard;
+          font-weight: 600;
+          line-height: 24px;
+        }
+  
+        .ant-pagination-item-active {
+          border-color: transparent;
+        }
+  
+        .ant-pagination-item-active a {
+          border-color: transparent;
+          color: black;
+          font-size: 16px;
+          font-family: Pretendard;
+          font-weight: 600;
+          line-height: 24px;
+  
+          &:hover {
+            border-color: transparent;
+            color: black;
+            font-size: 16px;
+            font-family: Pretendard;
+            font-weight: 600;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  
+    .none-mb {
+      display: none !important;
+    }
+  
+    .carouse-wrap {
+      .ant-carousel .slick-slider .slick-dots {
+        li {
+          width: 6px;
+          height: 6px;
+          border-radius: 3px;
+        }
+  
+        li.slick-active {
+          width: 20px;
+          height: 6px;
+          border-radius: 3px;
+        }
+  
+        button {
+          height: 6px;
+          border-radius: 3px;
+        }
+      }
+    }
+  }
+  @mixin ellipsis {
+    // white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  @for $i from 1 through 1000 {
+    .w#{$i}px {
+      width: #{$i}px !important;
+      max-width: #{$i}px;
+  
+      @include ellipsis;
+    }
+  }
+  
+  @for $i from 1 through 1000 {
+    .h#{$i}px {
+      height: #{$i}px !important;
+      max-height: #{$i}px;
+    }
+  }
+  
+  @for $i from -100 through 400 {
+    .mt#{$i}px {
+      margin-top: #{$i}px !important;
+    }
+  }
+  
+  @for $i from -100 through 400 {
+    .mb#{$i}px {
+      margin-bottom: #{$i}px !important;
+    }
+  }
+  @for $i from 0 through 400 {
+    .ml#{$i}px {
+      margin-left: #{$i}px !important;
+    }
+  }
+  
+  @for $i from 0 through 400 {
+    .mr#{$i}px {
+      margin-right: #{$i}px !important;
+    }
+  }
+  
+  @for $i from 0 through 400 {
+    .pl#{$i}px {
+      padding-left: #{$i}px !important;
+    }
+  }
+  
+  @for $i from 0 through 400 {
+    .pr#{$i}px {
+      padding-right: #{$i}px !important;
+    }
+  }
+  @for $i from 0 through 400 {
+    .pt#{$i}px {
+      padding-top: #{$i}px !important;
+    }
+  }
+  
+  @for $i from 0 through 400 {
+    .pb#{$i}px {
+      padding-bottom: #{$i}px !important;
+    }
+  }
+  @for $i from 0 through 100 {
+    .gap#{$i}px {
+      gap: #{$i}px !important;
+    }
+  }
+  .df{
+    display: flex;
+  }
+  .direction__column{
+    flex-direction: column;
+  }
+  .items__center{
+    align-items: center;
+  
+  }
+  .content__sb{
+    justify-content: space-between;
+  
+  }
+  .cursor__pointer{
+    cursor: pointer;
+  }
