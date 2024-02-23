@@ -1,0 +1,84 @@
+@mixin ellipsis {
+  // white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@for $i from 1 through 1200 {
+  .w#{$i}px {
+    width: #{$i}px !important;
+    max-width: #{$i}px;
+    @include ellipsis;
+  }
+  .h#{$i}px {
+    height: #{$i}px !important;
+    max-height: #{$i}px;
+  }
+}
+
+@for $i from -100 through 400 {
+  .mt#{$i}px {
+    margin-top: #{$i}px !important;
+  }
+  .mb#{$i}px {
+    margin-bottom: #{$i}px !important;
+  }
+  .ml#{$i}px {
+    margin-left: #{$i}px !important;
+  }
+  .mr#{$i}px {
+    margin-right: #{$i}px !important;
+  }
+
+  .pl#{$i}px {
+    padding-left: #{$i}px !important;
+  }
+  .pr#{$i}px {
+    padding-right: #{$i}px !important;
+  }
+  .pt#{$i}px {
+    padding-top: #{$i}px !important;
+  }
+  .pb#{$i}px {
+    padding-bottom: #{$i}px !important;
+  }
+}
+
+@for $i from 1 through 50 {
+  .gap#{$i}px {
+    gap: #{$i}px;
+  }
+}
+.df {
+  display: flex;
+}
+.dn {
+  display: none;
+}
+.items__center {
+  align-items: center;
+}
+.content__center {
+  justify-content: center;
+}
+.content__end {
+  justify-content: flex-end;
+}
+.content__between {
+  justify-content: space-between;
+}
+.margin__auto {
+  margin: 0 auto;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.cursor__pointer {
+  cursor: pointer;
+}
+.cursor__not {
+  cursor: not-allowed;
+}
+.opacity0 {
+  opacity: 0;
+}
